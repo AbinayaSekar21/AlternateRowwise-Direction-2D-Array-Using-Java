@@ -1,12 +1,15 @@
 # AlternateRowwise-Direction-2D-Array-Using-Java
-for(int j=0;j<cols;j++){
-            if(j%2==0){
-                for(int i=0;i<rows;i++){
+
+for(int i=0;i<rows;i++){
+            if(i%2==0){
+                for(int j=0;j<cols;j++){
                     System.out.print(arr[i][j]+" ");
                 }
             }
             else{
-                for(int i=rows-1;i>=0;i--){
+                for(int j=cols-1;j>=0;j--){
                     System.out.print(arr[i][j]+" ");
                 }
             }
+          //  System.out.println();
+        }
